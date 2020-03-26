@@ -7,8 +7,12 @@ class Navbar extends Component {
         super(props);
 
         this.state = {
-
+            showLogin: false
         }
+    }
+    LoginShowHandler = () => {
+        this.state.showLogin = !this.state.showLogin;
+        console.log('this is [LoginButton]', this.state.showLogin);
     }
     render() {
         return (
@@ -28,7 +32,7 @@ class Navbar extends Component {
                             <a href="#">Contact Us</a>
                         </li>
                         <li className="">
-                            <a href="#">Login</a>
+                            <a href="#" onClick={this.LoginShowHandler}>Login</a>
                         </li>
                     </ul>
                 </nav>

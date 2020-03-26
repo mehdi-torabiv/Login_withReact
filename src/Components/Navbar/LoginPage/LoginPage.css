@@ -1,11 +1,12 @@
 .loginPage {
     position: absolute;
-    left: 50vh;
-    top: 10rem;
+    left: 60vh;
+    top: 0;
     transform: translate(50%, 50%);
     width: 20rem;
     background-color: teal;
     text-align: center;
+    border-radius: 5px;
 }
 
 .headerLogin {
@@ -18,10 +19,10 @@
 
 .diffrent {
     border: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     background-color: transparent;
     width: 15rem;
-    height: 1.6rem;
+    height: 1.4rem;
 }
 
 input:focus {

@@ -19,7 +19,7 @@ const LoginPage = () => {
                         <input type="checkbox"></input>
                         <p>Are you ok with policy?</p>
                     </div>
-                    <div className="SubandDel">
+                    <div className="SubandDel subdiv">
                         <button>Login</button>
                         <button>Close</button>
                     </div>
