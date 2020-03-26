@@ -1,0 +1,35 @@
+.loginPage {
+    position: absolute;
+    left: 50vh;
+    top: 10rem;
+    transform: translate(50%, 50%);
+    width: 20rem;
+    background-color: teal;
+    text-align: center;
+}
+
+.headerLogin {
+    margin: 1rem 0;
+}
+
+.subdiv {
+    margin: 1rem 0rem;
+}
+
+.diffrent {
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    width: 15rem;
+    height: 1.6rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+
+.loginPage .checkbox {
+    display: inline-block;
+}
