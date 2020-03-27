@@ -5,7 +5,11 @@ const LoginPage = (props) => {
         return null;
     }
     return (
-        <div className="loginPage">
+        <div className="loginPage"
+            style={{
+                transform: props.showLogin ? 'translateX(50%)' : null,
+                opacity: props.showLogin ? '1' : '0',
+            }}>
             <h2 className="headerLogin">Login Page!</h2>
             <div>
                 <form>

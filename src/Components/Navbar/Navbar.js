@@ -23,7 +23,6 @@ class Navbar extends Component {
     render() {
         return (
             <div>
-
                 <nav>
                     <ul>
                         <li>
