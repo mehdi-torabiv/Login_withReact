@@ -11,12 +11,19 @@ class Navbar extends Component {
         }
     }
     LoginShowHandler = () => {
-        this.state.showLogin = !this.state.showLogin;
-        console.log('this is [LoginButton]', this.state.showLogin);
+        this.setState(prevState => ({
+            showLogin: !prevState.showLogin
+        }));
+        console.log('this is [LoginButton] is', this.state.showLogin);
+    }
+    show = () => {
+        console.log("he");
+
     }
     render() {
         return (
             <div>
+
                 <nav>
                     <ul>
                         <li>
@@ -36,8 +43,11 @@ class Navbar extends Component {
                         </li>
                     </ul>
                 </nav>
-                <LoginPage />
+                <LoginPage showLogin={this.state.showLogin}>
+                </LoginPage>
             </div>
+
+
         );
     }
 }

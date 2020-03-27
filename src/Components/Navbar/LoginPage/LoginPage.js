@@ -1,6 +1,9 @@
 import React from 'react';
 import "./LoginPage.css";
-const LoginPage = () => {
+const LoginPage = (props) => {
+    if (!props.showLogin) {
+        return null;
+    }
     return (
         <div className="loginPage">
             <h2 className="headerLogin">Login Page!</h2>
